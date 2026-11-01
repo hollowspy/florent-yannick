@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=dgcYOm8n8ME
+https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html
+
+Palette de couleur : 
+
+Bleu clair (#E9F1FA);
+bleu vif (#00ABE4)
+blanc (#FFFFFF);
+
+Option eventuelle : 
+ Bleu-gris (#96C2DB, #E5EDF1)
