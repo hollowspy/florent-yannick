@@ -11130,6 +11130,63 @@ header.carousel-header {
   padding: 2rem 1rem;
 }
 
+/* Le titre reste fixe et lisible pendant le défilement des photos. */
+header.carousel-header .home-hero-copy {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: clamp(2rem, 5vw, 5rem) 10%;
+  background: linear-gradient(180deg, transparent 15%, rgba(12, 25, 30, .35) 45%, rgba(12, 25, 30, .9) 100%);
+  color: #fff;
+  pointer-events: none;
+}
+header.carousel-header .home-hero-eyebrow {
+  margin: 0 0 1rem;
+  font: 700 clamp(.65rem, 1vw, .8rem)/1.6 "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+}
+header.carousel-header .home-heading {
+  max-width: 850px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .2);
+}
+header.carousel-header .home-heading span {
+  display: block;
+  margin-top: .6rem;
+  font-size: .65em;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+}
+header.carousel-header .home-hero-link {
+  margin-top: 1.75rem;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .65);
+  color: #fff;
+  font: 700 .8rem/1.6 "Montserrat", sans-serif;
+  text-decoration: none;
+  pointer-events: auto;
+}
+header.carousel-header .home-hero-link span { margin-left: 1.5rem; }
+header.carousel-header .home-hero-link:hover { border-color: #00abe4; }
+header.carousel-header .home-hero-link:focus-visible { outline: 2px solid white; outline-offset: 6px; }
+header.carousel-header .carousel-control-prev,
+header.carousel-header .carousel-control-next { z-index: 3; width: 7%; }
+@media (max-width: 575.98px) {
+  header.carousel-header { padding: 1rem .75rem; }
+  header.carousel-header .carousel-item img { min-height: 390px; }
+  header.carousel-header .home-hero-copy { padding: 2rem 10%; }
+}
+
 header.carousel-header .carousel {
   max-width: 1320px;
   margin: 0 auto;
